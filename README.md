@@ -23,4 +23,9 @@ u::::::::::::::u  n::::n    n::::n  o:::::ooooo:::::o
 
 ### Carousel ###
 
-
+llows you to add image slider.
+Use [NivoSlider](https://github.com/gilbitron/Nivo-Slider),
+[CarouFredSel](https://github.com/gilbitron/carouFredSel),
+[Kenburning](https://github.com/simbirsk/kenburning-slider),
+[FeatureCarousel](http://www.bkosborne.com/jquery-feature-carousel) and
+[ZoomBox](http://grafikart.github.io/Zoombox) to have numerous possibilities.
