@@ -23,7 +23,7 @@ u::::::::::::::u  n::::n    n::::n  o:::::ooooo:::::o
 
 ### Carousel ###
 
-llows you to add image slider.
+Allows you to add image slider.
 Use [NivoSlider](https://github.com/gilbitron/Nivo-Slider),
 [CarouFredSel](https://github.com/gilbitron/carouFredSel),
 [Kenburning](https://github.com/simbirsk/kenburning-slider),
