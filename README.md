@@ -29,3 +29,5 @@ Use [NivoSlider](https://github.com/gilbitron/Nivo-Slider),
 [Kenburning](https://github.com/simbirsk/kenburning-slider),
 [FeatureCarousel](http://www.bkosborne.com/jquery-feature-carousel) and
 [ZoomBox](http://grafikart.github.io/Zoombox) to have numerous possibilities.
+
+[CMSUno](https://github.com/boiteasite/cmsuno)
