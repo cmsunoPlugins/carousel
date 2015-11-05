@@ -21,7 +21,7 @@ u::::::::::::::u  n::::n    n::::n  o:::::ooooo:::::o
      \____/           \/    \/            \__/
 </pre>
 
-### Carousel ###
+## Carousel ##
 
 Allows you to add image slider.
 Use [NivoSlider](https://github.com/gilbitron/Nivo-Slider),
@@ -31,3 +31,8 @@ Use [NivoSlider](https://github.com/gilbitron/Nivo-Slider),
 [ZoomBox](http://grafikart.github.io/Zoombox) to have numerous possibilities.
 
 [CMSUno](https://github.com/boiteasite/cmsuno)
+
+### Versions ###
+
+* 1.0.1 - 05/11/2015 : Icon on finder button
+* 1.0 - 05/10/2015 : First stable version

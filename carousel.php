@@ -113,7 +113,7 @@ if (isset($_POST['action']))
 					<td><label><?php echo _("Image");?></label></td>
 					<td>
 						<input type="text" class="input" name="carouselImg" id="carouselImg" value="" />
-						<div class="bouton" style="margin-left:30px;" id="bFCarousel" onClick="f_finder_select('carouselImg')" title="<?php echo _("File manager");?>"><?php echo _("File Manager");?></div>
+						<div class="bouton finder" style="margin-left:30px;" id="bFCarousel" onClick="f_finder_select('carouselImg')" title="<?php echo _("File manager");?>"><img src="<?php echo $_POST['udep']; ?>includes/img/finder.png" /></div>
 					</td>
 					<td><div class="bouton fr" onClick="f_carousel_add(document.getElementById('carouselImg').value,'')" title="<?php echo _("Add this image");?>"><?php echo _("Add");?></div></td>
 				</tr>

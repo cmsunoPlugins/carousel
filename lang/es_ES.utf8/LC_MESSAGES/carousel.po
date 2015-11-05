@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CmsUno\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-18 11:53+0100\n"
-"PO-Revision-Date: 2015-08-18 11:53+0100\n"
+"POT-Creation-Date: 2015-11-05 16:14+0100\n"
+"PO-Revision-Date: 2015-11-05 16:14+0100\n"
 "Last-Translator: jacques Malgrange <contacter@boiteasite.fr>\n"
 "Language-Team: Jacques Malgrange <contacter@boiteasite.fr>\n"
 "Language: \n"
@@ -147,10 +147,6 @@ msgstr "imagen"
 msgid "File manager"
 msgstr "Administrador de archivos"
 
-#: ../../../carousel.php:116
-msgid "File Manager"
-msgstr "Finder"
-
 #: ../../../carousel.php:118
 msgid "Add this image"
 msgstr "Añadir esta imagen"
@@ -191,3 +187,5 @@ msgstr "Eliminación Imposible"
 msgid "Error"
 msgstr "Error"
 
+#~ msgid "File Manager"
+#~ msgstr "Finder"
