@@ -17,6 +17,7 @@ function f_save_carousel(){
 		h.push({name:'hei',value:document.getElementById('carouselH').value});
 		h.push({name:'pau',value:document.getElementById('carouselPause').value});
 		h.push({name:'spe',value:document.getElementById('carouselSpeed').value});
+		h.push({name:'nbr',value:document.getElementById('carouselNbr').value});
 		c=document.getElementById('carouselTransition');
 		h.push({name:'tra',value:c.options[c.selectedIndex].value});
 		h.push({name:'rst',value:document.getElementById('carouselRandStart').checked});
@@ -42,6 +43,8 @@ function f_load_carousel(){
 				document.getElementById('carouselH').value='';
 				document.getElementById('carouselPause').value='';
 				document.getElementById('carouselSpeed').value='';
+				document.getElementById('carouselNbr').value='';
+				document.getElementById('trCarNbr').style.display='none';
 				document.getElementById('carouselRandStart').checked=false;
 				document.getElementById('bSCarousel').style.visibility='hidden';
 				jQuery("#carouselResult").empty();
@@ -57,6 +60,7 @@ function f_load_carousel(){
 					if(da.hei)document.getElementById('carouselH').value=da.hei;
 					if(da.pau)document.getElementById('carouselPause').value=da.pau;
 					if(da.spe)document.getElementById('carouselSpeed').value=da.spe;
+					if(da.nbr)document.getElementById('carouselNbr').value=da.nbr;
 					if(da.rst==1)document.getElementById('carouselRandStart').checked=true;else document.getElementById('carouselRandStart').checked=false;
 					if(da.typ){
 						t=document.getElementById("carouselTyp");
@@ -127,6 +131,7 @@ function f_carousel_type(b){
 	var ah=document.getElementById('trCarH');
 	var ap=document.getElementById('trCarPause');
 	var as=document.getElementById('trCarSpeed');
+	var ab=document.getElementById('trCarNbr');
 	var ar=document.getElementById('trCarRandStart');
 	var at=document.getElementById('trCarTransition');
 	var an=document.getElementById('emCarNivo');
@@ -136,27 +141,27 @@ function f_carousel_type(b){
 	var az=document.getElementById('emCarZbox');
 	if(b=='nivo'){
 		aw.style.display="";ah.style.display="";ap.style.display="";as.style.display="";ar.style.display="";at.style.display="";
-		an.style.display="inline";af.style.display="none";ak.style.display="none";ae.style.display="none";az.style.display="none";
+		an.style.display="inline";af.style.display="none";ak.style.display="none";ae.style.display="none";az.style.display="none";ab.style.display="none";
 	}
 	else if(b=='fred'){
-		aw.style.display="";ah.style.display="";ap.style.display="";as.style.display="";ar.style.display="";
+		aw.style.display="";ah.style.display="";ap.style.display="";as.style.display="";ar.style.display="";ab.style.display="";
 		at.style.display="none";
 		an.style.display="none";af.style.display="inline";ak.style.display="none";ae.style.display="none";az.style.display="none";
 	}
 	else if(b=='ken'){
 		aw.style.display="";ah.style.display="";ap.style.display="";
 		as.style.display="none";ar.style.display="none";at.style.display="none";
-		an.style.display="none";af.style.display="none";ak.style.display="inline";ae.style.display="none";az.style.display="none";
+		an.style.display="none";af.style.display="none";ak.style.display="inline";ae.style.display="none";az.style.display="none";ab.style.display="none";
 	}
 	else if(b=='feat'){
 		ah.style.display="";ap.style.display="";as.style.display="";
 		aw.style.display="none";ar.style.display="none";at.style.display="none";
-		an.style.display="none";af.style.display="none";ak.style.display="none";ae.style.display="inline";az.style.display="none";
+		an.style.display="none";af.style.display="none";ak.style.display="none";ae.style.display="inline";az.style.display="none";ab.style.display="none";
 	}
 	else if(b=='zbox'){
 		ah.style.display="";ap.style.display="none";as.style.display="none";
 		aw.style.display="none";ar.style.display="none";at.style.display="none";
-		an.style.display="none";af.style.display="none";ak.style.display="none";ae.style.display="none";az.style.display="inline";
+		an.style.display="none";af.style.display="none";ak.style.display="none";ae.style.display="none";az.style.display="inline";ab.style.display="none";
 	}
 }
 //

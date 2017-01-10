@@ -54,12 +54,11 @@ if(file_exists('data/'.$Ubusy.'/carousel.json'))
 				}
 			$Ufoot .= '<script type="text/javascript">jQuery(window).load(function(){$("#carousel'.$n.'").carouFredSel({';
 			$Ufoot .= 'auto:'.(($a2['pau'])?$a2['pau']:3500);
-			$Ufoot .= ',width:'.(($a2['wid'])?$a2['wid']:'100%');
-			$Ufoot .= ',height:'.(($a2['hei'])?$a2['hei']:'auto');
-			$Ufoot .= ',padding:0';
+			$Ufoot .= ',width:'.(($a2['wid'])?$a2['wid']:'"100%"');
+			$Ufoot .= ',height:'.(($a2['hei'])?$a2['hei']:'"auto"');
 			$Ufoot .= ',scroll:{';
 				$Ufoot .= 'duration:'.(($a2['spe'])?$a2['spe']:700);
-				$Ufoot .= ',items:4,fx:"scroll",pauseOnHover:true';
+				$Ufoot .= ',items:'.(!empty($a2['nbr'])?$a2['nbr']:0).',fx:"scroll",pauseOnHover:true';
 			$Ufoot .= '}';
 			$Ufoot .= ',items:{';
 				$Ufoot .= 'start:'.(($a2['rst'])?'"random"':0);

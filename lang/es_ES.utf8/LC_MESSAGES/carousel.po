@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CmsUno\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-05 16:14+0100\n"
-"PO-Revision-Date: 2015-11-05 16:14+0100\n"
+"POT-Creation-Date: 2016-12-28 17:30+0100\n"
+"PO-Revision-Date: 2016-12-28 17:31+0100\n"
 "Last-Translator: jacques Malgrange <contacter@boiteasite.fr>\n"
 "Language-Team: Jacques Malgrange <contacter@boiteasite.fr>\n"
 "Language: \n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Report-\tmsgstr-Bugs-To: \n"
 "Report-\t\tmsgstr-Bugs-To: \n"
-"X-Poedit-KeywordsList: _\n"
+"X-Poedit-KeywordsList: _;T_\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
@@ -120,70 +120,78 @@ msgid "Duration of the transition between two images (ms)."
 msgstr "Duración de la transición entre dos imágenes (ms)."
 
 #: ../../../carousel.php:82
+msgid "Step"
+msgstr "Paso"
+
+#: ../../../carousel.php:84
+msgid "Number of images in each transition."
+msgstr "Número de imágenes en cada transición."
+
+#: ../../../carousel.php:86
 msgid "Random First"
 msgstr "Random Primera"
 
-#: ../../../carousel.php:84
+#: ../../../carousel.php:88
 msgid "The first image that appears is random."
 msgstr "La primera imagen que aparece es aleatoria."
 
-#: ../../../carousel.php:86
+#: ../../../carousel.php:90
 msgid "Transition"
 msgstr "Transición"
 
-#: ../../../carousel.php:107
+#: ../../../carousel.php:111
 msgid "Type of transition between images."
 msgstr "Tipo de transición entre imágenes."
 
-#: ../../../carousel.php:110
+#: ../../../carousel.php:114
 msgid "Add a picture :"
 msgstr "Añadir una imagen :"
 
-#: ../../../carousel.php:113
+#: ../../../carousel.php:117
 msgid "Image"
 msgstr "imagen"
 
-#: ../../../carousel.php:116
+#: ../../../carousel.php:120
 msgid "File manager"
 msgstr "Administrador de archivos"
 
-#: ../../../carousel.php:118
+#: ../../../carousel.php:122
 msgid "Add this image"
 msgstr "Añadir esta imagen"
 
-#: ../../../carousel.php:118
+#: ../../../carousel.php:122
 msgid "Add"
 msgstr "Añadir"
 
-#: ../../../carousel.php:121
+#: ../../../carousel.php:125
 msgid "Selection :"
 msgstr "Selección :"
 
-#: ../../../carousel.php:125
+#: ../../../carousel.php:129
 msgid "Save settings"
 msgstr "Guardar ajustes"
 
-#: ../../../carousel.php:125
+#: ../../../carousel.php:129
 msgid "Save"
 msgstr "Guardar"
 
-#: ../../../carousel.php:165
+#: ../../../carousel.php:174
 msgid "Backup performed : carousel-"
 msgstr "Copia de seguridad realizada: carousel-"
 
-#: ../../../carousel.php:166
+#: ../../../carousel.php:175
 msgid "Impossible backup"
 msgstr "Copia de seguridad Imposible"
 
-#: ../../../carousel.php:177
+#: ../../../carousel.php:186
 msgid "Deletion made"
 msgstr "Supresión hecho"
 
-#: ../../../carousel.php:178
+#: ../../../carousel.php:187
 msgid "Impossible deletion"
 msgstr "Eliminación Imposible"
 
-#: ../../../carousel.php:180
+#: ../../../carousel.php:189
 msgid "Error"
 msgstr "Error"
 

@@ -78,6 +78,10 @@ if (isset($_POST['action']))
 					<td><label><?php echo T_("Speed");?></label></td>
 					<td><input type="text" class="input" name="carouselSpeed" id="carouselSpeed" style="width:50px;" /></td>
 					<td><em><?php echo T_("Duration of the transition between two images (ms).");?></em></td>
+				</tr><tr id="trCarNbr">
+					<td><label><?php echo T_("Step");?></label></td>
+					<td><input type="text" class="input" name="carouselNbr" id="carouselNbr" style="width:50px;" /></td>
+					<td><em><?php echo T_("Number of images in each transition.");?></em></td>
 				</tr><tr id="trCarRandStart">
 					<td><label><?php echo T_("Random First");?></label></td>
 					<td><input type="checkbox" class="input"  name="carouselRandStart" id="carouselRandStart" /></td>
@@ -129,8 +133,12 @@ if (isset($_POST['action']))
 		// ********************************************************************************************
 		case 'save':
 		$q = file_get_contents('../../data/busy.json'); $a = json_decode($q,true); $Ubusy = $a['nom'];
-		$q = file_get_contents('../../data/'.$Ubusy.'/carousel.json');
-		$a = json_decode($q,true);
+		$a = array();
+		if(file_exists('../../data/'.$Ubusy.'/carousel.json'))
+			{
+			$q = file_get_contents('../../data/'.$Ubusy.'/carousel.json');
+			$a = json_decode($q,true);
+			}
 		$n = $_POST['car'];
 		if($n==0) // nouveau carousel
 			{
@@ -145,10 +153,11 @@ if (isset($_POST['action']))
 				}
 			}
 		$a[$n]['typ'] = $_POST['typ'];
-		$a[$n]['wid'] = $_POST['wid'];
-		$a[$n]['hei'] = $_POST['hei'];
-		$a[$n]['pau'] = $_POST['pau'];
-		$a[$n]['spe'] = $_POST['spe'];
+		$a[$n]['wid'] = preg_replace("/[^0-9]/","",$_POST['wid']);
+		$a[$n]['hei'] = preg_replace("/[^0-9]/","",$_POST['hei']);
+		$a[$n]['pau'] = preg_replace("/[^0-9]/","",$_POST['pau']);
+		$a[$n]['spe'] = preg_replace("/[^0-9]/","",$_POST['spe']);
+		$a[$n]['nbr'] = preg_replace("/[^0-9]/","",$_POST['nbr']);
 		$a[$n]['tra'] = $_POST['tra'];
 		if ($_POST['rst']=="true") $a[$n]['rst']=1; else $a[$n]['rst']=0;
 		if($_POST['nb'])
