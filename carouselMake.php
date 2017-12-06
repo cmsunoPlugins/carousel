@@ -34,6 +34,7 @@ if(file_exists('data/'.$Ubusy.'/carousel.json'))
 			$Ufoot .= ',controlNav:false';
 			$Ufoot .= ',prevText:"<"';
 			$Ufoot .= ',nextText:">"';
+			if(!empty($a2['opt'])) $Ufoot .= ','.$a2['opt'];
 			$Ufoot .= '});});</script>'."\r\n";
 			}
 		// ******** CAROUFRED *****************
@@ -65,6 +66,7 @@ if(file_exists('data/'.$Ubusy.'/carousel.json'))
 				$Ufoot .= ',visible:"variable"';
 				$Ufoot .= ',width:"variable"';
 			$Ufoot .= '}';
+			if(!empty($a2['opt'])) $Ufoot .= ','.$a2['opt'];
 			$Ufoot .= '});});</script>'."\r\n";
 			}
 		// ******** KEN BURNING *****************
@@ -87,6 +89,7 @@ if(file_exists('data/'.$Ubusy.'/carousel.json'))
 			$Ufoot .= '<script type="text/javascript">$("#carousel'.$n.'").kenBurning({';
 			$Ufoot .= 'zoom:1.25, ';
 			$Ufoot .= 'time:'.(($a2['pau'])?$a2['pau']:6000);
+			if(!empty($a2['opt'])) $Ufoot .= ','.$a2['opt'];
 			$Ufoot .= '});</script>'."\r\n";
 			}
 		// ******** FEATURE CAROUSEL *****************
@@ -115,8 +118,9 @@ if(file_exists('data/'.$Ubusy.'/carousel.json'))
 			$Ufoot .= 'autoPlay:'.(($a2['pau'])?$a2['pau']:4000).', ';
 			$Ufoot .= 'pauseOnHover:true, ';
 			$Ufoot .= 'trackerIndividual:false, ';
-			$Ufoot .= 'trackerSummation:false});});';
-			$Ufoot .= '</script>'."\r\n";
+			$Ufoot .= 'trackerSummation:false';
+			if(!empty($a2['opt'])) $Ufoot .= ', '.$a2['opt'];
+			$Ufoot .= '});});</script>'."\r\n";
 			}
 		// ******** ZOOMBOX *****************
 		else if($a2['typ']=='zbox' && strpos($Ucontent.$Uhtml,'[[carousel-'.$n.']]')!==false)
@@ -136,7 +140,9 @@ if(file_exists('data/'.$Ubusy.'/carousel.json'))
 				$Ufoot .= '<script type="text/javascript" src="uno/plugins/carousel/zoombox/zoombox.min.js"></script>'."\r\n";
 				$zbox= 1;
 				}
-			$Ufoot .= '<script type="text/javascript">jQuery(function($){$("a.zoombox").zoombox();});</script>'."\r\n";
+			$Ufoot .= '<script type="text/javascript">jQuery(function($){$("a.zoombox").zoombox(';
+			if(!empty($a2['opt'])) $Ufoot .= '{'.$a2['opt'].'}';
+			$Ufoot .= ');});</script>'."\r\n";
 			}
 		// ****************************************
 		}

@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CmsUno\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-28 17:30+0100\n"
-"PO-Revision-Date: 2016-12-28 17:31+0100\n"
+"POT-Creation-Date: 2017-12-06 14:13+0100\n"
+"PO-Revision-Date: 2017-12-06 14:14+0100\n"
 "Last-Translator: jacques Malgrange <contacter@boiteasite.fr>\n"
 "Language-Team: Jacques Malgrange <contacter@boiteasite.fr>\n"
-"Language: \n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,9 +14,8 @@ msgstr ""
 "Report-\t\tmsgstr-Bugs-To: \n"
 "X-Poedit-KeywordsList: _;T_\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
-"X-Poedit-Language: Spanish\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-SearchPath-0: ../../..\n"
 
 #: ../../../carousel.php:18
@@ -28,12 +27,17 @@ msgid "Just insert the code"
 msgstr "Sólo tiene que insertar el código"
 
 #: ../../../carousel.php:19
-msgid "in the text of your page or directly into the template. This code will be replaced by the corresponding carousel."
-msgstr "en el texto de su página o directamente en la plantilla. Este código será reemplazado por el carrusel correspondiente."
+msgid ""
+"in the text of your page or directly into the template. This code will be "
+"replaced by the corresponding carousel."
+msgstr ""
+"en el texto de su página o directamente en la plantilla. Este código será "
+"reemplazado por el carrusel correspondiente."
 
 #: ../../../carousel.php:20
 msgid "To operate, JQuery must be inserted. See settings (or in the template)."
-msgstr "Para operar, JQuery debe insertarse. Consulte Ajustes (o en la plantilla)."
+msgstr ""
+"Para operar, JQuery debe insertarse. Consulte Ajustes (o en la plantilla)."
 
 #: ../../../carousel.php:21
 msgid "ID number :"
@@ -57,7 +61,8 @@ msgstr "Suprimir"
 
 #: ../../../carousel.php:31
 msgid "Ability to create severals carousels. They are identified by a number."
-msgstr "Capacidad para crear severals carruseles. Ellos se identifican por un number."
+msgstr ""
+"Capacidad para crear severals carruseles. Ellos se identifican por un number."
 
 #: ../../../carousel.php:34
 msgid "Parameters :"
@@ -69,11 +74,16 @@ msgstr "Tipo de carrusel"
 
 #: ../../../carousel.php:49
 msgid "The 'frame by frame' Slider of reference. Many successful transitions."
-msgstr "El \"cuadro por cuadro\" Deslizador de referencia. Muchas transiciones exitosas."
+msgstr ""
+"El \"cuadro por cuadro\" Deslizador de referencia. Muchas transiciones "
+"exitosas."
 
 #: ../../../carousel.php:52
-msgid "A multi-image carousel with many possibilities. Perfect for a logos parade."
-msgstr "Un carrusel de múltiples imágenes con muchas posibilidades. Perfecto para un desfile logotipos."
+msgid ""
+"A multi-image carousel with many possibilities. Perfect for a logos parade."
+msgstr ""
+"Un carrusel de múltiples imágenes con muchas posibilidades. Perfecto para un "
+"desfile logotipos."
 
 #: ../../../carousel.php:55
 msgid "A simple slide show using the famous Ken Burns effect."
@@ -85,7 +95,9 @@ msgstr "Un carrusel simple y elegante con gran efecto 3D en rotación."
 
 #: ../../../carousel.php:61
 msgid "Display images in a lightbox that floats over your web page."
-msgstr "Mostrar las imágenes de una caja de luz que flota por encima de su página web."
+msgstr ""
+"Mostrar las imágenes de una caja de luz que flota por encima de su página "
+"web."
 
 #: ../../../carousel.php:66
 msgid "Width"
@@ -128,70 +140,78 @@ msgid "Number of images in each transition."
 msgstr "Número de imágenes en cada transición."
 
 #: ../../../carousel.php:86
+msgid "Options"
+msgstr "Opciones"
+
+#: ../../../carousel.php:88
+msgid "Other Javascript options for this slider (see doc)."
+msgstr "Otras opciones de Javascript para este carrusel (ver documento)."
+
+#: ../../../carousel.php:90
 msgid "Random First"
 msgstr "Random Primera"
 
-#: ../../../carousel.php:88
+#: ../../../carousel.php:92
 msgid "The first image that appears is random."
 msgstr "La primera imagen que aparece es aleatoria."
 
-#: ../../../carousel.php:90
+#: ../../../carousel.php:94
 msgid "Transition"
 msgstr "Transición"
 
-#: ../../../carousel.php:111
+#: ../../../carousel.php:115
 msgid "Type of transition between images."
 msgstr "Tipo de transición entre imágenes."
 
-#: ../../../carousel.php:114
+#: ../../../carousel.php:118
 msgid "Add a picture :"
 msgstr "Añadir una imagen :"
 
-#: ../../../carousel.php:117
+#: ../../../carousel.php:121
 msgid "Image"
 msgstr "imagen"
 
-#: ../../../carousel.php:120
+#: ../../../carousel.php:124
 msgid "File manager"
 msgstr "Administrador de archivos"
 
-#: ../../../carousel.php:122
+#: ../../../carousel.php:126
 msgid "Add this image"
 msgstr "Añadir esta imagen"
 
-#: ../../../carousel.php:122
+#: ../../../carousel.php:126
 msgid "Add"
 msgstr "Añadir"
 
-#: ../../../carousel.php:125
+#: ../../../carousel.php:129
 msgid "Selection :"
 msgstr "Selección :"
 
-#: ../../../carousel.php:129
+#: ../../../carousel.php:133
 msgid "Save settings"
 msgstr "Guardar ajustes"
 
-#: ../../../carousel.php:129
+#: ../../../carousel.php:133
 msgid "Save"
 msgstr "Guardar"
 
-#: ../../../carousel.php:174
+#: ../../../carousel.php:179
 msgid "Backup performed : carousel-"
 msgstr "Copia de seguridad realizada: carousel-"
 
-#: ../../../carousel.php:175
+#: ../../../carousel.php:180
 msgid "Impossible backup"
 msgstr "Copia de seguridad Imposible"
 
-#: ../../../carousel.php:186
+#: ../../../carousel.php:191
 msgid "Deletion made"
 msgstr "Supresión hecho"
 
-#: ../../../carousel.php:187
+#: ../../../carousel.php:192
 msgid "Impossible deletion"
 msgstr "Eliminación Imposible"
 
-#: ../../../carousel.php:189
+#: ../../../carousel.php:194
 msgid "Error"
 msgstr "Error"
 

@@ -17,6 +17,7 @@ function f_save_carousel(){
 		h.push({name:'hei',value:document.getElementById('carouselH').value});
 		h.push({name:'pau',value:document.getElementById('carouselPause').value});
 		h.push({name:'spe',value:document.getElementById('carouselSpeed').value});
+		h.push({name:'opt',value:document.getElementById('carouselOpt').value});
 		h.push({name:'nbr',value:document.getElementById('carouselNbr').value});
 		c=document.getElementById('carouselTransition');
 		h.push({name:'tra',value:c.options[c.selectedIndex].value});
@@ -26,13 +27,13 @@ function f_save_carousel(){
 		jQuery.post('uno/plugins/carousel/carousel.php',h,function(r){
 			c=document.getElementById('carouselNum');
 			c.selectedIndex=0;
-			f_load_carousel();
+			f_load_carousel(0);
 			f_alert(r);
 		});
 	});
 }
 //
-function f_load_carousel(){
+function f_load_carousel(f){
 	jQuery(document).ready(function(){
 		jQuery.getJSON("uno/data/"+Ubusy+"/carousel.json?r="+Math.random(),function(data){
 			var c=document.getElementById('carouselNum');
@@ -43,6 +44,7 @@ function f_load_carousel(){
 				document.getElementById('carouselH').value='';
 				document.getElementById('carouselPause').value='';
 				document.getElementById('carouselSpeed').value='';
+				document.getElementById('carouselOpt').value='';
 				document.getElementById('carouselNbr').value='';
 				document.getElementById('trCarNbr').style.display='none';
 				document.getElementById('carouselRandStart').checked=false;
@@ -50,16 +52,18 @@ function f_load_carousel(){
 				jQuery("#carouselResult").empty();
 				jQuery("#carouselNum").empty();
 				jQuery('#carouselNum').append('<option value="0">'+t+'</option>');
+				if(f==1&&data.length!=0)n=1;
 				jQuery.each(data,function(k,da){
-					jQuery('#carouselNum').append('<option value="'+k+'">carousel-'+k+'</option>');
+					jQuery('#carouselNum').append('<option value="'+k+'" '+(k==n?'selected':'')+'>carousel-'+k+'</option>');
 				});
 			}
-			else jQuery.each(data,function(k,da){
+			if(n!=0)jQuery.each(data,function(k,da){
 				if(k==n){
 					if(da.wid)document.getElementById('carouselW').value=da.wid;
 					if(da.hei)document.getElementById('carouselH').value=da.hei;
 					if(da.pau)document.getElementById('carouselPause').value=da.pau;
 					if(da.spe)document.getElementById('carouselSpeed').value=da.spe;
+					if(da.opt)document.getElementById('carouselOpt').value=da.opt;
 					if(da.nbr)document.getElementById('carouselNbr').value=da.nbr;
 					if(da.rst==1)document.getElementById('carouselRandStart').checked=true;else document.getElementById('carouselRandStart').checked=false;
 					if(da.typ){
@@ -87,7 +91,7 @@ function f_supp_carousel(){
 		var c=document.getElementById('carouselNum');
 		jQuery.post('uno/plugins/carousel/carousel.php',{'action':'supp','unox':Unox,'s':c.options[c.selectedIndex].value},function(r){
 			c.selectedIndex=0;
-			f_load_carousel();
+			f_load_carousel(0);
 			f_alert(r);
 		});
 	});
@@ -165,4 +169,4 @@ function f_carousel_type(b){
 	}
 }
 //
-f_load_carousel();
+f_load_carousel(1);

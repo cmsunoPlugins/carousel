@@ -82,6 +82,10 @@ if (isset($_POST['action']))
 					<td><label><?php echo T_("Step");?></label></td>
 					<td><input type="text" class="input" name="carouselNbr" id="carouselNbr" style="width:50px;" /></td>
 					<td><em><?php echo T_("Number of images in each transition.");?></em></td>
+				</tr><tr id="trCarOpt">
+					<td><label><?php echo T_("Options");?></label></td>
+					<td><input type="text" class="input" name="carouselOpt" id="carouselOpt" style="width:300px;" /></td>
+					<td><em><?php echo T_("Other Javascript options for this slider (see doc).");?></em></td>
 				</tr><tr id="trCarRandStart">
 					<td><label><?php echo T_("Random First");?></label></td>
 					<td><input type="checkbox" class="input"  name="carouselRandStart" id="carouselRandStart" /></td>
@@ -158,6 +162,7 @@ if (isset($_POST['action']))
 		$a[$n]['pau'] = preg_replace("/[^0-9]/","",$_POST['pau']);
 		$a[$n]['spe'] = preg_replace("/[^0-9]/","",$_POST['spe']);
 		$a[$n]['nbr'] = preg_replace("/[^0-9]/","",$_POST['nbr']);
+		if(!empty($_POST['opt'])) $a[$n]['opt'] = $_POST['opt'];
 		$a[$n]['tra'] = $_POST['tra'];
 		if ($_POST['rst']=="true") $a[$n]['rst']=1; else $a[$n]['rst']=0;
 		if($_POST['nb'])
@@ -166,7 +171,7 @@ if (isset($_POST['action']))
 			for ($v=0;$v<$_POST['nb'];++$v)
 				{
 				$a[$n]['img'][$v]['s'] = $_POST['img'.$v];
-				$a[$n]['img'][$v]['t'] = $_POST['text'.$v];
+				$a[$n]['img'][$v]['t'] = str_replace('"',"'",$_POST['text'.$v]);
 				}
 			}
 		else unset($a[$n]);

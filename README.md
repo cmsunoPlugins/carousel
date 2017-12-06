@@ -34,6 +34,7 @@ Use [NivoSlider](https://github.com/gilbitron/Nivo-Slider),
 
 ### Versions ###
 
+* 1.1.3 - 06/12/2017 : Add JS options field for each slider
 * 1.1.2 - 15/03/2017 : Fix issue when unknow lang
 * 1.1.1 - 10/01/2017 : New option for CarouFredSel
 * 1.1 - 14/10/2016 : Use PHP-Gettext in place of gettext
