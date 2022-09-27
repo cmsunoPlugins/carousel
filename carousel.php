@@ -84,7 +84,7 @@ if (isset($_POST['action']))
 					<td><em><?php echo T_("Number of images in each transition.");?></em></td>
 				</tr><tr id="trCarOpt">
 					<td><label><?php echo T_("Options");?></label></td>
-					<td><input type="text" class="input" name="carouselOpt" id="carouselOpt" style="width:300px;" /></td>
+					<td><input type="text" class="input" name="carouselOpt" id="carouselOpt" style="width:240px;" /></td>
 					<td><em><?php echo T_("Other Javascript options for this slider (see doc).");?></em></td>
 				</tr><tr id="trCarRandStart">
 					<td><label><?php echo T_("Random First");?></label></td>

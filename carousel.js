@@ -113,6 +113,7 @@ function f_carousel_add(f,g){
 	d=document.createElement('input');
 	d.type='text';
 	d.className='input';
+	d.style.width='160px';
 	d.value=g;
 	c.appendChild(d);
 	b.appendChild(c);
@@ -130,7 +131,7 @@ function f_carousel_add(f,g){
 //
 function f_carousel_type(b){
 	var a=document.getElementById('carouselTyp');
-	if(!b)var b=a.options[a.selectedIndex].value;
+	if(!b)b=a.options[a.selectedIndex].value;
 	var aw=document.getElementById('trCarW');
 	var ah=document.getElementById('trCarH');
 	var ap=document.getElementById('trCarPause');
